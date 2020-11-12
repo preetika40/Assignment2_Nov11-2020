@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div id="video-box">
+            <div id="hide-video">
+                <div id="loading-bar">
+                    <span></span><span></span><span></span>
+                </div>
+                <div id="loading-text">
+                    LOADING...
+                </div>
+                <canvas id="pause-btn" width="50" height="50"></canvas>
+                <canvas id="play-btn" width="50" height="50"></canvas>
+                <canvas id="stop-btn" width="50" height="50"></canvas>
+            </div>
+            <div id="show-video" style="display: none;">
+                <video controls>
+                    <source src="media/mixkit-white-sand-beach-and-palm-trees-1564.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div id="content-box">
+            <div id="hide-content">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="show-content" style="display: none;">
+                <div>White sand beach and palm trees</div>
+                <div>White sand beach landscape on a sunny day with green</div>
+                <div>palms near the seashore and a slightly cloudy sky above</div>
+                <div>Video</div>
+                <div>White sand beach</div>
+            </div>
+        </div>
+    </div>
+
+    <button id="toggle-btn" type="submit" onclick="toggle()">Show content</button>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
+
